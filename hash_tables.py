@@ -25,5 +25,3 @@ class ChainedHash:
     def search(self, key):
         start_hash = self.hash_fucntion(key, self.N)
         pass
-
-
