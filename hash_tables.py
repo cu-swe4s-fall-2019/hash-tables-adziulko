@@ -13,13 +13,13 @@ def reservoir_sampling(new_val, size, V):
             V[j] = new_val
 
 class LPHashTable:
-    keys = []
 
     def __init__(self, N, hash_function):
         self.hash_function = hash_function
         self.N = N
         self.T = [None for i in range(N)]
         self.M = 0
+        self.key = []
 
     def add(self, key, value):
         start_hash = self.hash_function(key, self.N)
